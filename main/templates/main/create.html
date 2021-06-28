@@ -1,0 +1,13 @@
+{%extends 'main/boilerplate.html' %}
+
+{%block content%}
+
+<form action='/create/' method='POST'>
+    {%csrf_token%}
+    {{form}}
+    
+    <button type='submit'>Create List</button>
+</form>
+
+
+{%endblock%}

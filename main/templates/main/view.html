@@ -1,0 +1,11 @@
+{% extends 'main/boilerplate.html' %}
+
+{% block content %}
+<ul>
+{% for todo in user.todolist_set.all %}
+<li><a href='/{{todo.id}}'><b>todo.name</b></a></li>
+
+{%  endfor %}
+
+</ul>
+{% endblock %}
